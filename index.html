@@ -8,65 +8,63 @@
 
 	<body>
 
-	<div class="content">
-		<!-- Nav pills -->
-		<ul class="nav nav-pills" role="tablist">
-			<li class="nav-item">
-				<a class="nav-link active" data-toggle="pill" href="#login">Login</a>
-			</li>
-			<li class="nav-item">
-				<a class="nav-link" data-toggle="pill" href="#regis">Register</a>
-			</li>
-		</ul>
 
-		<!-- Tab panes -->
-		<div class="tab-content">
-			<div id="login" class="container tab-pane active">
-				<form>
-					<div class="form-group">
-						<label for="exampleFormControlInput1">Email address</label>
-						<input type="email" class="form-control is-valid" id="exampleFormControlInput1" placeholder="name@example.com">
-						<small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+
+	<div class="login-wrap">
+		<div class="login-html">
+			<input id="tab-1" type="radio" name="tab" class="sign-in" checked><label for="tab-1" class="tab">Sign In</label>
+			<input id="tab-2" type="radio" name="tab" class="sign-up"><label for="tab-2" class="tab">Sign Up</label>
+			<div class="login-form">
+				<div class="sign-in-htm">
+					<div class="group">
+						<label for="user" class="label">Username</label>
+						<input id="user" type="text" class="input">
 					</div>
-					<div class="form-group">
-						<label for="exampleInputPassword1">Password</label>
-						<input type="password" class="form-control is-invalid" id="exampleInputPassword1" placeholder="Password">
-						<small id="emailHelp" class="form-text text-muted">Password incorrect.</small>
+					<div class="group">
+						<label for="pass" class="label">Password</label>
+						<input id="pass" type="password" class="input" data-type="password">
 					</div>
-					<button type="submit" class="btn btn-primary">Submit</button>
-				</form>
-			</div>
-			<div id="regis" class="container tab-pane fade">
-				<form>
-					<div class="form-group">
-						<label for="InputName">Full Name</label>
-						<input type="text" class="form-control is-valid" id="InputName" placeholder="Full Name">
-						<small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+					<div class="group">
+						<input id="check" type="checkbox" class="check" checked>
+						<label for="check"><span class="icon"></span> Keep me Signed in</label>
 					</div>
-					<div class="form-group">
-						<label for="InputUsername">Username</label>
-						<input type="text" class="form-control is-valid" id="InputUsername" placeholder="Username">
-						<small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+					<div class="group">
+						<input type="submit" class="button" value="Sign In">
 					</div>
-					<div class="form-group">
-						<label for="exampleFormControlInput2">Email address</label>
-						<input type="email" class="form-control is-valid" id="exampleFormControlInput2" placeholder="name@example.com">
-						<small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+					<div class="hr"></div>
+					<div class="foot-lnk">
+						<a href="#forgot">Forgot Password?</a>
 					</div>
-					<div class="form-group">
-						<label for="exampleInputPassword2">Password</label>
-						<input type="password" class="form-control is-invalid" id="exampleInputPassword2" placeholder="Password">
-						<small id="emailHelp" class="form-text text-muted">Password incorrect.</small>
+				</div>
+				<div class="sign-up-htm">
+					<div class="group">
+						<label for="user" class="label">Username</label>
+						<input id="user" type="text" class="input">
 					</div>
-					<div class="form-group">
-						<label for="exampleInputPasswordVer">Verify Password</label>
-						<input type="password" class="form-control is-invalid" id="exampleInputPasswordVer" placeholder="Password">
+					<div class="group">
+						<label for="pass" class="label">Password</label>
+						<input id="pass" type="password" class="input" data-type="password">
 					</div>
-					<button type="submit" class="btn btn-primary">Submit</button>
-				</form>
+					<div class="group">
+						<label for="pass" class="label">Repeat Password</label>
+						<input id="pass" type="password" class="input" data-type="password">
+					</div>
+					<div class="group">
+						<label for="pass" class="label">Email Address</label>
+						<input id="pass" type="text" class="input">
+					</div>
+					<div class="group">
+						<input type="submit" class="button" value="Sign Up">
+					</div>
+					<div class="hr"></div>
+					<div class="foot-lnk">
+						<label for="tab-1">Already Member?</a>
+					</div>
+				</div>
 			</div>
 		</div>
 	</div>
+
 
 
 
