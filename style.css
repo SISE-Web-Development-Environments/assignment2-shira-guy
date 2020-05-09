@@ -598,14 +598,20 @@ button {
 
 
 
-
-.Footer {
-    position: fixed;
-    left: 0;
+#footer {
+    position: absolute;
     bottom: 0;
     width: 100%;
-    text-align: center;
+    height: 2.5rem;            /* Footer height */
 }
+
+/*.Footer {*/
+/*    position: fixed;*/
+/*    left: 0;*/
+/*    bottom: 0;*/
+/*    width: 100%;*/
+/*    text-align: center;*/
+/*}*/
 
 /*sign up sign in btn finish here*/
 
