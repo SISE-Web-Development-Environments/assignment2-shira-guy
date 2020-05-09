@@ -597,15 +597,14 @@ button {
 }
 
 
-footer{
-    font-size: 17px;
-    font-family: "Open Sans", sans-serif;
-    color: #000000;
-    /*margin: 20%;*/
-    text-align: center;
-    width: 2100px;
-    height: auto;
 
+
+.Footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
 }
 
 /*sign up sign in btn finish here*/
