@@ -21,40 +21,23 @@
 	<script src="https://cdn.jsdelivr.net/jquery.validation/1.15.1/jquery.validate.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.1/additional-methods.js"></script>
 
-	<!--		<meta name="description" content="CSS Tabs" />-->
-	<!--		<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/normalize/2.0.1/normalize.css">-->
-	<!--		<link href='https://fonts.googleapis.com/css?family=PT+Sans' rel='stylesheet' type='text/css'>-->
-	<!--		<title>CSS Tabs</title>-->
-	<!--		<meta charset=utf-8>-->
-</head>
-<body>
-<!--	<div class="tabbed">-->
-<!--		<input type="radio" name="tabs" id="tab-nav-1" checked>-->
-<!--		<label for="tab-nav-1">Welcome</label>-->
-<!--		<input type="radio" name="tabs" id="tab-nav-2">-->
-<!--		<label for="tab-nav-2">Sign Up</label>-->
-<!--		<input type="radio" name="tabs" id="tab-nav-3">-->
-<!--		<label for="tab-nav-3">Sign In</label>-->
-<!--		<input type="radio" name="tabs" id="tab-nav-4">-->
-<!--		<label for="tab-nav-4">Settings</label>-->
-<!--		<input type="radio" name="tabs" id="tab-nav-5">-->
-<!--		<label for="tab-nav-5">Output</label>-->
-<!--		<div class="tabs">-->
-<!--			<div><h2>Welcome</h2><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet nulla tortor, a posuere urna. Praesent urna quam, semper ut ultricies et, mollis ac elit. </p><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet nulla tortor, a posuere urna. Praesent urna quam, semper ut ultricies et, mollis ac elit. Suspendisse tempor, lacus id consectetur sagittis, lorem odio dignissim nulla, a condimentum sem neque sed ligula. Maecenas id risus eros, eget porttitor metus. Quisque pellentesque neque dignissim nisl pellentesque vitae tempus urna eleifend. Nullam egestas, neque id placerat luctus, nibh velit pharetra nulla, vel pretium justo massa ut elit. Vivamus nec auctor nunc.</p></div>-->
-<!--			<div><h2>Sign Up</h2><p>Maecenas dictum, urna ut consequat condimentum, est dui commodo diam, ac pretium dui ante eu quam. Curabitur posuere metus nec tellus venenatis placerat. Ut egestas neque in odio vulputate gravida. In at justo ac est laoreet eleifend vel quis arcu. Aliquam erat volutpat. Proin vitae vehicula neque. Nam tempus erat ac ante tincidunt tincidunt. Pellentesque eu nibh sapien. Nunc augue magna, lacinia eget congue eget, mattis id tortor. Fusce id vestibulum neque. Proin tincidunt tellus ut risus lobortis cursus. Duis sit amet urna vel sapien ullamcorper varius.</p></div>-->
-<!--			<div><h2>Sign In</h2><p>Duis luctus dolor ac erat luctus hendrerit. Aenean id congue magna. Proin sit amet elit vel lacus ornare dignissim imperdiet nec odio. Maecenas condimentum egestas lorem et laoreet. Donec ut leo non purus rutrum euismod vel faucibus nunc. Curabitur vel mauris nisi, vitae laoreet erat. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Maecenas ipsum odio, iaculis id vulputate vitae, vestibulum at nunc. Integer non nisl lorem. Quisque lobortis congue semper. Nunc neque nisi, consequat id egestas vitae, porta vel sem.</p></div>-->
-<!--			<div><h2>Settings</h2><p>Fusce vel eros eu lectus ultricies fermentum vestibulum adipiscing odio. Suspendisse ultricies, metus nec dapibus pharetra, quam arcu vulputate nisl, a pretium nisi velit id ante. Nunc auctor augue sit amet orci vestibulum id placerat nulla pellentesque. Duis vel quam velit. Ut auctor ipsum quis lacus semper non pretium mi dignissim. Morbi ultrices augue eget nisi hendrerit placerat. Mauris rhoncus urna quis metus congue quis condimentum risus interdum. Nam lobortis lectus et enim laoreet mattis. Integer faucibus ullamcorper erat, at rhoncus leo bibendum sed. Mauris libero urna, placerat non pretium ac, elementum et arcu. Aliquam non tellus diam, vel scelerisque odio. Etiam a quam et enim vehicula feugiat posuere at dui. Phasellus at nisl quam. Integer nisi mi, varius vitae placerat viverra, dapibus vitae massa. Nullam ut orci vitae nisi ornare aliquam in eget orci.</p></div>-->
-<!--			<div><h2>Output</h2><p> Guy Hohev Bamba</p></div>-->
 
-<!--		</div>-->
-<!--	</div>-->
-<!--	<script src="https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.6/prefixfree.min.js"></script>-->
+</head>
+<style>
+	body {
+		background-image: url('photos/bodyBack2.png');
+		background-repeat: no-repeat;
+		background-size: cover;
+
+
+	}
+</style>
+<body>
 
 
 <!-- Tab links -->
 <div class="tab">
 <center>
-	<!--		<button class="tablinks" onclick="openTab(event, 'Welcome')">Welcome</button>-->
 	<button class="tablinks" onclick="openTab(event, 'Sign Up')">Sign Up</button>
 	<button class="tablinks" onclick="openTab(event, 'Sign In')">Sign In</button>
 	<button class="tablinks" data-toggle="modal" data-target="#myModal">About</button>
@@ -68,6 +51,7 @@
 
 	<center>
 	<img f src="photos/Welcome.png"  width="300" height="100">
+		<img src="photos/monster1.png"  width="70" height="70">
 	</center>
 
 	<br>
@@ -86,10 +70,11 @@
 </div>
 
 <div class="tabcontent" id="Sign Up">
-	<center>
+<center>
 		<br>
 		<br>
 			<img src="photos/SignUp.png"  width="225" height="65">
+</center>
 		<form class="cmxform" id="signUpForm">
 		<div class="container">
 
@@ -121,19 +106,19 @@
 			<input type="date" id="sigUpForm_Birthday" name="birthday">
 			<span class="error_form" id="errB"></span>
 			<br>
+			<center>
 			<input id="pressSU" type="submit" value=""/>
 			<div class="clearfix">
 
-				<!--<button id="submitBtn" type="submit" class="signupbtn">Sign Up</button>-->
-				<!--<li><a href="#" id="btnSignForm" onsubmit="addUser()" class="round red">Sign Up<span class="round" >Are you ready to play?? </span></a></li>-->
 				<li><a href="#" id="btnSignUp" onclick="pressSU()" class="round green">Sign Up<span class="round">But only if you really, really want to.</span></a>
 				</li>
 
 
 			</div>
+			</center>
 		</div>
 	</form>
-	</center>
+
 </div>
 
 
@@ -159,8 +144,6 @@
 			<br>
 			<br>
 			<input id="pressSI" type="submit" value=""/>
-
-			<!--<button id="loginBtn" type="submit" class="signupbtn" onclick="loginUser()">Login</button>-->
 			<li><a href="#" id="btnSign11" onclick="pressSI()" class="round green">Login<span class="round">That is, if you already have an account.</span></a>
 			</li>
 
@@ -172,18 +155,6 @@
 		</form>
 	</center>
 </div>
-
-<!--	<div class="tabcontent" id="Settings">-->
-<!--		-->
-<!--	</div>-->
-
-
-<!--	<div class="tabcontent" id="modalAbout">-->
-<!--	<div class="container">-->
-<!-- Button to Open the Modal -->
-<!--		<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal">-->
-<!--			Open modal-->
-<!--		</button>-->
 
 <!-- The Modal -->
 <div class="modal fade" id="myModal">
@@ -199,8 +170,8 @@
 			<!-- Modal body -->
 			<div class="modal-body">
 				<p><b>Our names:</b> Guy Zamostiano and Shira Wertheim.<br><br>
-				<b>Jquery uses:</b> <br><br>
-				<b>Use template:</b> Most of the time, if we needed some code templates, we used the website W3school.<br><br>
+				<b>Jquery uses:</b> We used jQuery for validation the user input, sign up and sign in. <br><br>
+				<b>Use template:</b> Most of the time, if we needed some code examples, we used the website W3school.<br><br>
 				<b>Difficulties during this assignment:</b> This is the first time we use JavaScript, so we had to learn a language from the beginning.
 				<br>Although, we must say this was fun, and we are sure this work will help us in the future.
 				<br>
@@ -235,19 +206,19 @@
 			<audio id="winSound" src = "sound/win.mp3"></audio>
 			<center>
 
-			<label id="txtName" for="lblScore">Name</label>
-			<input id = "lblName" type="text" />
+			<label id="txtName" for="lblName">Name</label>
+			<input id = "lblName" type="text" disabled/>
 
 
 			<label id="txtScore" for="lblScore">Score</label>
-			<input id="lblScore" type="text" />
+			<input id="lblScore" type="text" disabled/>
 
 
 			<label id="txtTime" for="lblTime">Time</label>
-			<input id="lblTime" type="text" />
+			<input id="lblTime" type="text" disabled/>
 
 			<label id="txtLife" for="lblLife">Life</label>
-			<input id="lblLife" type="text"/>
+			<input id="lblLife" type="text" disabled/>
 
 			<canvas id="canvas" height="700" width="700"></canvas>
 			</center>
@@ -267,16 +238,7 @@
 			</center>
 			<br>
 			<br>
-			<!--<h3>Settings</h3>-->
-			<!--		<div style="text-align:center;width:480px;">-->
-			<!--		<input type="image" src="photos/upPhoto.png" alt="Submit" width="60" height="60" onkeypress="moveup()">-->
-			<!--			<br>-->
-			<!--		<input type="image" src="photos/leftPhoto.png" alt="Submit" width="60" height="60" onclick="moveleft()">-->
-			<!--		<input type="image" src="photos/downPhoto.png" alt="Submit" width="60" height="60" onclick="movedown()">-->
-			<!--		<input type="image" src="photos/rightPhoto.png" alt="Submit" width="60" height="60" onclick="moveright()">-->
-			<!--			<br><br>-->
 
-			<!--		</div>-->
 			<label for="setUp"><b>Choose button up:</b></label>
 			<input type="text" id="setUp" value="ArrowUp"  name="setUp" onkeydown="setUpKey()">
 			<br>
@@ -392,66 +354,11 @@
 <br>
 <br>
 
-<br>
-<br>
 <Footer style="text-align: center" id="footer">
 	<p>©All the credits are for Shira Wertheim and Guy Zamostiano<br>
-		To contact us please send an email: shiraGuy@post.bgu.ac.il
-		<!--shirawer@post.bgu.ac.il<br>-->
-		<!--guyzamos@post.bgu.ac.il-->
+		Contact us: guyzamos@post.bgu.ac.il, shirawer@post.bgu.ac.il
 	</p>
 </Footer>
 
 </html>
-
-<!--	<script type="text/javascript">-->
-<!--		$(function(){-->
-
-<!--			$("#errUN").hide();-->
-<!--			$("#errP").hide();-->
-<!--			$("#errFN").hide();-->
-<!--			$("#errE").hide();-->
-<!--			$("#errB").hide();-->
-
-<!--			var error_userName = false;-->
-<!--			var error_pass = false;-->
-<!--			var error_fullName = false;-->
-<!--			var error_email = false;-->
-<!--			var error_birth = false;-->
-
-<!--			$("#sigUpForm_UserName").focus(function () {-->
-<!--				check_fname();-->
-<!--			});-->
-
-<!--			function check_fname() {-->
-<!--				var pattern = /^[a-zA-Z]*$;-->
-<!--				var fname = $("#sigUpForm_UserName").val();-->
-<!--				if(pattern.test(fname)  && fname !== '') {-->
-<!--					$("#errFN").hide();-->
-<!--					$("#sigUpForm_UserName").css("border-bottom","2px solid #34F458");-->
-<!--				}-->
-<!--				else {-->
-<!--					$("#errFN").html("should contain only characters");-->
-<!--					$("#errFN").show();-->
-<!--					$("#sigUpForm_UserName").css("border-bottom","2px solid #34F458");-->
-<!--					error_userName = true;-->
-<!--				}-->
-<!--				alert("please")-->
-<!--			}-->
-
-<!--		})-->
-<!--	</script>-->
-
-
-<!--	<script>-->
-<!--		document.addEventListener('DOMContentLoaded', ()=>{-->
-<!--			document.getElementById('submitBtn').addEventListener('click', addUser);-->
-<!--		});-->
-<!--		document.addEventListener('DOMContentLoaded', ()=>{-->
-<!--			document.getElementById('loginBtn').addEventListener('click', loginUser);-->
-<!--		});-->
-<!--	</script>-->
-
-
-
 

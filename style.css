@@ -4,215 +4,6 @@
 @import "cmxform.css";
 
 
-/*body{*/
-/*    margin:0;*/
-/*    color:#6a6f8c;*/
-/*    background:#c8c8c8;*/
-/*    font:600 16px/18px 'Open Sans',sans-serif;*/
-/*}*/
-/**,:after,:before{box-sizing:border-box}*/
-/*.clearfix:after,.clearfix:before{content:'';display:table}*/
-/*.clearfix:after{clear:both;display:block}*/
-/*a{color:inherit;text-decoration:none}*/
-
-/*.login-wrap{*/
-/*    width:100%;*/
-/*    margin:auto;*/
-/*    max-width:525px;*/
-/*    min-height:670px;*/
-/*    position:relative;*/
-/*    background:url(https://media.giphy.com/media/cyMqOH8rjgDHG/giphy.gif)  center;*/
-/*    background-size: cover;*/
-
-/*    box-shadow:0 12px 15px 0 rgba(0,0,0,.24),0 17px 50px 0 rgba(0,0,0,.19);*/
-
-/*.login-form{*/
-/*    min-height:345px;*/
-/*    position:relative;*/
-/*    perspective:1000px;*/
-/*    transform-style:preserve-3d;*/
-/*}*/
-/*.login-form .group{*/
-/*    margin-bottom:15px;*/
-/*}*/
-/*.login-form .group .label,*/
-/*.login-form .group .input,*/
-/*.login-form .group .button{*/
-/*    width:100%;*/
-/*    color:#fff;*/
-/*    display:block;*/
-/*}*/
-/*.login-form .group .input,*/
-/*.login-form .group .button{*/
-/*    border:none;*/
-/*    padding:15px 20px;*/
-/*    border-radius:25px;*/
-/*    background:rgba(255,255,255,.1);*/
-/*}*/
-/*.login-form .group input[data-type="password"]{*/
-/*    text-security:circle;*/
-/*    -webkit-text-security:circle;*/
-/*}*/
-/*.login-form .group .label{*/
-/*    color:#aaa;*/
-/*    font-size:12px;*/
-/*}*/
-/*.login-form .group .button{*/
-/*    background:#1161ee;*/
-/*}*/
-/*.login-form .group label .icon{*/
-/*    width:15px;*/
-/*    height:15px;*/
-/*    border-radius:2px;*/
-/*    position:relative;*/
-/*    display:inline-block;*/
-/*    background:rgba(255,255,255,.1);*/
-/*}*/
-/*.login-form .group label .icon:before,*/
-/*.login-form .group label .icon:after{*/
-/*    content:'';*/
-/*    width:10px;*/
-/*    height:2px;*/
-/*    background:#fff;*/
-/*    position:absolute;*/
-/*    transition:all .2s ease-in-out 0s;*/
-/*}*/
-/*.login-form .group label .icon:before{*/
-/*    left:3px;*/
-/*    width:5px;*/
-/*    bottom:6px;*/
-/*    transform:scale(0) rotate(0);*/
-/*}*/
-/*.login-form .group label .icon:after{*/
-/*    top:6px;*/
-/*    right:0;*/
-/*    transform:scale(0) rotate(0);*/
-/*}*/
-/*.login-form .group .check:checked + label{*/
-/*    color:#fff;*/
-/*}*/
-/*.login-form .group .check:checked + label .icon{*/
-/*    background:#1161ee;*/
-/*}*/
-/*.login-form .group .check:checked + label .icon:before{*/
-/*    transform:scale(1) rotate(45deg);*/
-/*}*/
-/*.login-form .group .check:checked + label .icon:after{*/
-/*    transform:scale(1) rotate(-45deg);*/
-/*}*/
-/*.login-html .sign-in:checked + .tab + .sign-up + .tab + .login-form .sign-in-htm{*/
-/*    transform:rotate(0);*/
-/*}*/
-/*.login-html .sign-up:checked + .tab + .login-form .sign-up-htm{*/
-/*    transform:rotate(0);*/
-/*}*/
-
-/*.hr{*/
-/*    height:2px;*/
-/*    margin:60px 0 50px 0;*/
-/*    background:rgba(255,255,255,.2);*/
-/*}*/
-/*.foot-lnk{*/
-/*    text-align:center;*/
-/*}*/
-
-
-
-
-
-
-/*@media screen and (max-width: 700px) {*/
-/*    .tabbed { width: 400px }*/
-/*    .tabbed > label { display: none }*/
-/*    .tabs > div {*/
-/*        width: 400px;*/
-/*        border: none;*/
-/*        padding: 0;*/
-/*        opacity: 1;*/
-/*        position: relative;*/
-/*        transform: none;*/
-/*        margin-bottom: 60px;*/
-/*    }*/
-/*    .tabs > div h2 {*/
-/*        border-bottom: 2px solid #4EC6DE;*/
-/*        padding-bottom: .5em;*/
-/*    }*/
-/*}*/
-
-
-/*!* Style the input fields *!*/
-/*input {*/
-/*    padding: 10px;*/
-/*    width: 100%;*/
-/*    font-size: 17px;*/
-/*    font-family: Raleway;*/
-/*    border: 1px solid #aaaaaa;*/
-/*}*/
-
-/*!* Mark input boxes that gets an error on validation: *!*/
-/*input.invalid {*/
-/*    background-color: #ffdddd;*/
-/*}*/
-
-/*!* Hide all steps by default: *!*/
-/*.tab {*/
-/*    display: none;*/
-/*}*/
-
-/*!* Make circles that indicate the steps of the form: *!*/
-/*.step {*/
-/*    height: 15px;*/
-/*    width: 15px;*/
-/*    margin: 0 2px;*/
-/*    background-color: #bbbbbb;*/
-/*    border: none;*/
-/*    border-radius: 50%;*/
-/*    display: inline-block;*/
-/*    opacity: 0.5;*/
-/*}*/
-
-/*!* Mark the active step: *!*/
-/*.step.active {*/
-/*    opacity: 1;*/
-/*}*/
-
-/*!* Mark the steps that are finished and valid: *!*/
-/*.step.finish {*/
-/*    background-color: #4CAF50;*/
-/*}*/
-/*#signInMenu, #signUpMenu{*/
-/*!*left: 50%;*!*/
-/*!*position: absolute;*!*/
-/*!*padding: 14px 20px;*!*/
-/*!*margin: 8px 0;*!*/
-/*background-color: #3091af;*/
-/*color: #000000;*/
-/*padding: 14px 20px;*/
-/*margin: 8px 0;*/
-/*border: none;*/
-/*cursor: pointer;*/
-/*width: 120px;*/
-/*opacity: 0.9;*/
-
-/*}*/
-/*.tabbed > label:hover,*/
-/*.tabbed > input:checked + label {*/
-/*background: #4EC6DE;*/
-/*}*/
-
-
-/*.tabs {*/
-/*clear: both;*/
-/*perspective: 600px;*/
-/*}*/
-
-
-
-
-
-
-
-
 
 /* 3 main buttons: Sign in, Sign up, About */
 .tab {
@@ -511,7 +302,7 @@ label img {
 
 /*labels game*/
 #lblLife,#lblScore,#lblTime, #lblName{
-    width: 80px;
+    width: 100px;
     height: 10px ;
     text-align: center;
     background-color: #fafff6;
@@ -589,7 +380,11 @@ div.centered {
     background: #f1f1f1;
 }
 
-
+#pressSI, #pressSU{
+    color: blue;
+    background: #204579;
+    border: #204579;
+}
 canvas{
 
 }
@@ -805,7 +600,7 @@ button {
 footer{
     font-size: 17px;
     font-family: "Open Sans", sans-serif;
-    color: #022180;
+    color: #000000;
     /*margin: 20%;*/
     text-align: center;
     width: 2100px;

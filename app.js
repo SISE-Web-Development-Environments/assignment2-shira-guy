@@ -108,7 +108,6 @@ function Start() {
 
 	buildPacman();
 	buildFood();
-	//setTimeout(buildGoodMonster, 2000);
 	buildGoodMonster();
 	buildKeyboards();
 	buildSpecialFood();
@@ -731,6 +730,10 @@ function updatePosition() {
 	// }
 }
 
+/**
+ * check if game finish
+ * @returns {boolean}
+ */
 function isGameFinished(){
     var flag=true;
     for (var i = 0; i < boardSize; i++) {
@@ -827,28 +830,36 @@ function putMonstersInRightPlace() {
 		putMonster4();
 	}
 }
-
+/**
+ * put the monsters in the corner
+ */
 function putMonster1() {
 	boardMonster[monster1.i][monster1.j] = 0;
 	monster1.i = 1;
 	monster1.j = 1;
 	boardMonster[monster1.i][monster1.j] = 5; //monster1
 }
-
+/**
+ * put the monsters in the corner
+ */
 function putMonster2() {
 	boardMonster[monster2.i][monster2.j] = 0;
 	monster2.i = 1;
 	monster2.j = boardSize - 2;
 	boardMonster[monster2.i][monster2.j] = 6; //monster2
 }
-
+/**
+ * put the monsters in the corner
+ */
 function putMonster3() {
 	boardMonster[monster3.i][monster3.j] = 0;
 	monster3.i = boardSize - 2;
 	monster3.j = 1;
 	boardMonster[monster3.i][monster3.j] = 7; //monster3
 }
-
+/**
+ * put the monsters in the corner
+ */
 function putMonster4() {
 
 	boardMonster[monster4.i][monster4.j] = 0;
@@ -1048,6 +1059,9 @@ function drawMonster() {
 	}
 }
 
+/**
+ * check validation of form
+ */
 $(document).ready(function () {
 	$("#signUpForm").validate({
 		rules: {
@@ -1081,20 +1095,20 @@ $(document).ready(function () {
 				availableUser: 'UserName already exist'
 			},
 			firstName: {
-				lettersonly: "Must contain only letters",
+				lettersonly: "Only letters",
 				required: "Required field"
 			},
 			lastName: {
-				lettersonly: "Must contain only letters",
+				lettersonly: "Only letters",
 				required: "Required field"
 			},
 			email: {
 				required: "Required field",
-				email: "Please insert valid email"
+				email: "invalid email"
 			},
 			password: {
 				required: "required field",
-				goodPassword: "Password must contain at least 6 characters, include a number and a letter"
+				goodPassword: "6 chars (num & char)"
 			},
 			birthday: {
 				required: "required field"
@@ -1105,7 +1119,9 @@ $(document).ready(function () {
 		}
 	});
 });
-
+/**
+ * check validation of form
+ */
 $(document).ready(function () {
 	$("#signInForm").validate({
 		rules: {
@@ -1133,7 +1149,9 @@ $(document).ready(function () {
 		}
 	});
 });
-
+/**
+ * check validation of form
+ */
 $(function () {
 
 	//Registration
@@ -1215,6 +1233,7 @@ function addUser() {
 function loginUser() {
 	nameUser = document.getElementById("sigUpForm_UserName").value;
 	let key = document.getElementById("logUserName").value;
+	nameUser = document.getElementById("logUserName").value;
 	if (localStorage.getItem(key) == null) {
 	} else {
 		let password = document.getElementById("logPass").value;
@@ -1261,6 +1280,9 @@ function updateTextInputBall(val) {
 	document.getElementById('textSliderBall').value = val;
 }
 
+/**
+ * set the game settings accordind to the user input
+ */
 function setGameProperties() {
 	totalFood = document.getElementById("sliderBalls").value;
 	totalTime = document.getElementById("sliderTime").value;
@@ -1293,7 +1315,9 @@ function setGameProperties() {
 	}
 }
 
-
+/**
+ * set the game settings random
+ */
 function setRandomGameProperties() {
 	document.getElementById("sliderBalls").value= getRandomInt(50, 90);
 	document.getElementById("textSliderBall").value= document.getElementById("sliderBalls").value;
@@ -1320,7 +1344,9 @@ function setRandomGameProperties() {
 }
 
 
-
+/**
+ * disable settings during game
+ */
 function setDisable() {
     document.getElementById("btnRandom").hidden = true;
     document.getElementById("btnPlay").hidden = true;
@@ -1344,10 +1370,16 @@ function setDisable() {
     document.getElementById("setDown").disabled=true;
     document.getElementById("setLeft").disabled=true;
     document.getElementById("setRight").disabled=true;
+    document.getElementById("lblName").disabled=true;
+    document.getElementById("lblScore").disabled=true;
+    document.getElementById("lblLife").disabled=true;
+    document.getElementById("lblTime").disabled=true;
 }
 
 
-
+/**
+ * enable settings between games
+ */
 function setAble() {
     document.getElementById("btnRandom").hidden = false;
     document.getElementById("btnPlay").hidden = false;
@@ -1377,9 +1409,10 @@ function setAble() {
 }
 
 
-
-
-
+/**
+ * get Random Color
+ * @returns {string}
+ */
 function getRandomColor() {
 	var letters = '0123456789ABCDEF';
 	var color = '#';
@@ -1389,60 +1422,81 @@ function getRandomColor() {
 	return color;
 }
 
-
+/**
+ * get Random int
+ * @returns {string}
+ */
 function getRandomInt(min, max) {
 	min = Math.ceil(min);
 	max = Math.floor(max);
 	return Math.floor(Math.random() * (max - min)) + min; //The maximum is exclusive and the minimum is inclusive
 }
 
-
+/**
+ * set keys
+ */
 function setUpKey() {
 	keyUp = event.keyCode;
 }
 
-
+/**
+ * set keys
+ */
 function setDownKey() {
 	keyDown = event.keyCode;
 }
 
-
+/**
+ * set keys
+ */
 function setRightKey() {
 	keyRight = event.keyCode;
 }
 
-
+/**
+ * set keys
+ */
 function setLeftKey() {
 	keyLeft = event.keyCode;
 }
 
 
-
-
+/**
+ * start the music
+ */
 function playMusicGame(){ //todo add!!!!
     document.getElementById('gameSound').play();
     document.getElementById('gameSound').volume = 0.2;
 
 }
-
+/**
+ * stop the music
+ */
 function stopMusicGame(){ //todo add!!!!!!
     document.getElementById('gameSound').pause();
     document.getElementById('winSound').pause();
 
 }
 
-
+/**
+ * start the music
+ */
 function playMusicWin(){
     document.getElementById('winSound').play();
     document.getElementById('winSound').volume = 0.2;
 }
 
-
+/**
+ * start the music
+ */
 function playMusicDeath(){
     document.getElementById('endSound').play();
     document.getElementById('endSound').volume = 0.2;
 }
 
+/**
+ * clean the board
+ */
 function cleanBoard(){
     for (var i = 0; i < boardSize-1; i++) {
         for (var j = 0; j < boardSize-1; j++) {
@@ -1454,29 +1508,24 @@ function cleanBoard(){
     }
 }
 
-//
-// function displayUserName(){
-//     var userName = document.getElementById('sigUpForm_UserName');
-//     changePage()
-// }
 
-// window.onresize = function () {
-// 	canvas.style.width = '100%';
-// 	canvas.height = canvas.width * .75;
-// }
-
-
-
+/**
+ * button press button
+ */
 function pressSU() {
 	document.getElementById("pressSU").click();
 }
 
-
+/**
+ * button press button
+ */
 function pressSI() {
 	document.getElementById("pressSI").click();
 }
 
-
+/**
+ * stop game
+ */
 function stopGame(){
 	cleanBoard();
 	stopMusicGame();
